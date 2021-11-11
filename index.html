@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Notatki</title>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./css/style.css" />
+		
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="notes">
+				<div class="notes__top">
+					<h1 class="notes__top-heading">Notatki</h1>
+					<button class="notes__top-btn">Dodaj notatkę</button>
+				</div>
+				<div class="notes__bottom">
+					<ul class="notes__bottom-list">
+					</ul>
+				</div>
+
+				<div class="notes__editPopup ">
+					<textarea
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+						class="notes__editPopup-textarea"
+					></textarea>
+					<div class="notes__editPopup-bottom">
+						<button class="notes__editPopup-bottom-button notes__editPopup-bottom-cancel">Anuluj</button>
+						<button class="notes__editPopup-bottom-button notes__editPopup-bottom-approve">Potwierdź edycje</button>
+
+					</div>
+
+				</div>
+				
+				<div class="notes__popup">
+					<textarea
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+						class="notes__popup-textarea"
+					></textarea>
+					<div class="notes__popup-bottom">
+						<button class="notes__popup-bottom-button notes__popup-bottom-cancel">Anuluj</button>
+						<p class="notes__popup-bottom-error">Wpisz jakiś tekst!</p>
+						<button class="notes__popup-bottom-button notes__popup-bottom-add">Dodaj notatkę</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
